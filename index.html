@@ -69,7 +69,11 @@
   <div class="contact">
     <h2>Contact Us</h2>
 
-    <form name="contact" method="POST" data-netlify="true" action="/">
+    <form name="contact" method="POST" data-netlify="true" action="/" onsubmit="showThankYou()">
+<div id="thankyou" style="display:none;margin-top:20px;padding:15px;background:#e6fff1;border-radius:6px;color:#0a7a3d;font-weight:600;">
+  ✅ Thank you! Your message has been sent successfully. We will contact you shortly.
+</div>
+
 
       <input type="hidden" name="form-name" value="contact">
 
