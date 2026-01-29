@@ -68,10 +68,22 @@
 <section id="contact">
   <div class="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@kiwisparkcleaning.co.nz<br>Phone: +64 21 000 000</p>
-    <p>Service Area: New Zealand</p>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:12px;margin-bottom:10px;">
+
+      <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:12px;margin-bottom:10px;">
+
+      <textarea name="message" placeholder="Your Message" required style="width:100%;padding:12px;margin-bottom:10px;"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
   </div>
 </section>
+
 
 <footer>
   <p>© 2026 KiwiSpark Cleaning. All Rights Reserved.</p>
