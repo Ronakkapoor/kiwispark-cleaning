@@ -21,6 +21,28 @@
     .contact {background:#f7f9ff;border-radius:12px;padding:40px;}
     footer {background:#111;color:#fff;text-align:center;padding:20px;}
     @media(max-width:768px){.about{grid-template-columns:1fr;}.hero h2{font-size:30px;}}
+
+    /* Thank You Message Animation */
+.thankyou-box {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: #e6fff1;
+  border-radius: 6px;
+  color: #0a7a3d;
+  font-weight: 600;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.thankyou-box.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
   </style>
 </head>
 <body>
@@ -70,9 +92,10 @@
     <h2>Contact Us</h2>
 
     <form name="contact" method="POST" data-netlify="true" action="/?success=true">
-<div id="thankyou" style="display:none;margin-top:20px;padding:15px;background:#e6fff1;border-radius:6px;color:#0a7a3d;font-weight:600;">
+<div id="thankyou" class="thankyou-box">
   ✅ Thank you! Your message has been sent successfully. We will contact you shortly.
 </div>
+
 
 
       <input type="hidden" name="form-name" value="contact">
