@@ -101,6 +101,20 @@
   }
 </script>
 
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("success") === "true") {
+    const msg = document.getElementById("thankyou");
+    msg.style.display = "block";
+
+    setTimeout(() => {
+      msg.style.display = "none";
+      window.history.replaceState({}, document.title, "/");
+    }, 4000); // 4 seconds
+  }
+</script>
+
+
 
 </body>
 </html>
