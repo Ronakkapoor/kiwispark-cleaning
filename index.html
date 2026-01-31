@@ -1,107 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kiwispark Cleaning | Professional Cleaning Services NZ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KiwiSpark Cleaning | Auckland</title>
 
-  <style>
-    body {margin:0;font-family:Arial,Helvetica,sans-serif;color:#333;background:#fff;}
-    header {background:#0a6cff;color:#fff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
-    header h1 {margin:0;font-size:24px;}
-    nav a {color:#fff;margin-left:20px;text-decoration:none;font-weight:500;}
-    .hero {background:#f2f6ff;padding:80px 40px;text-align:center;}
-    .hero h2 {font-size:40px;margin-bottom:15px;}
-    .hero p {font-size:18px;max-width:700px;margin:0 auto 25px;}
-    .btn {background:#0a6cff;color:#fff;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:bold;display:inline-block;}
-    section {padding:60px 40px;max-width:1100px;margin:auto;}
-    .services {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-    .card {background:#fff;border-radius:10px;padding:25px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
-    .about {display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-    .contact {background:#f7f9ff;border-radius:12px;padding:40px;}
-    form input, form textarea {width:100%;padding:12px;margin-bottom:15px;border-radius:6px;border:1px solid #ccc;font-size:15px;}
-    form button {background:#0a6cff;color:#fff;padding:12px 25px;border:none;border-radius:6px;font-size:16px;cursor:pointer;}
-    .map-box {margin-top:40px;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.15);}    
-    .whatsapp-float {position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;font-size:28px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:1000;animation:pulse 1.5s infinite;}
-    @keyframes pulse {0%{transform:scale(1);}50%{transform:scale(1.1);}100%{transform:scale(1);} }
-    footer {background:#111;color:#fff;text-align:center;padding:20px;}
-    @media(max-width:768px){.about{grid-template-columns:1fr;}.hero h2{font-size:30px;}}
-  </style>
+<style>
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f6fb;
+  color:#333;
+}
+header{
+  background:#0a6cff;
+  color:#fff;
+  padding:20px;
+  text-align:center;
+}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+.hero{
+  text-align:center;
+}
+.hero h1{font-size:40px;}
+.btn{
+  background:#0a6cff;
+  color:#fff;
+  padding:14px 28px;
+  border-radius:6px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:15px;
+}
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+.contact-box{
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+button{
+  background:#0a6cff;
+  color:#fff;
+  padding:14px;
+  width:100%;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+}
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25d366;
+  color:#fff;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer{
+  background:#111;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Kiwispark Cleaning</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <h2>KiwiSpark Cleaning</h2>
+  <p>Professional Cleaning Services – Auckland, NZ</p>
 </header>
 
 <section class="hero">
-  <h2>Professional Cleaning Services in New Zealand</h2>
-  <p>Reliable residential and commercial cleaning services with trained staff, eco-friendly products, and guaranteed satisfaction.</p>
-  <a class="btn" href="#contact">Get Free Quote</a>
+  <h1>Reliable & Affordable Cleaning Services</h1>
+  <p>Residential & Commercial Cleaning with Trusted Staff</p>
+  <a href="#contact" class="btn">Get Free Quote</a>
 </section>
 
-<section id="services">
+<section>
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card"><h3>Home Cleaning</h3><p>Complete house cleaning including kitchen, bathrooms, bedrooms, and living areas.</p></div>
-    <div class="card"><h3>Office Cleaning</h3><p>Daily or weekly office cleaning for a healthy and productive work environment.</p></div>
-    <div class="card"><h3>Deep Cleaning</h3><p>Detailed cleaning covering hard-to-reach areas and stubborn dirt.</p></div>
-    <div class="card"><h3>Move In / Move Out</h3><p>Professional cleaning when moving in or vacating a property.</p></div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="about">
-    <div>
-      <h2>About Us</h2>
-      <p>Kiwispark Cleaning is a trusted New Zealand cleaning company delivering high-quality and affordable cleaning solutions.</p>
-      <p>✔ Experienced Staff<br>✔ Eco-Friendly Products<br>✔ On-Time Service</p>
-    </div>
-    <div class="card">
-      <h3>Why Choose Us?</h3>
-      <p>Customer satisfaction, transparent pricing, and consistent quality.</p>
-    </div>
+    <div class="card">Home Cleaning</div>
+    <div class="card">Office Cleaning</div>
+    <div class="card">Deep Cleaning</div>
+    <div class="card">Move In / Move Out</div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="contact">
-    <h2>Contact Us</h2>
+  <h2>Contact Us</h2>
 
-    <!-- EMAIL LEAD FORM (FormSubmit – FIXED 405) -->
+  <!-- 🔥 FORM SUBMIT – NO JS – NO 405 -->
+  <div class="contact-box">
     <form action="https://formsubmit.co/kapoorronak891@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New Cleaning Inquiry - Website">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for contacting Kiwispark Cleaning! We have received your message and will get back to you shortly.">
-      <input type="hidden" name="_next" value="https://example.com/thanks.html">
 
+      <!-- REQUIRED -->
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="text" name="phone" placeholder="Phone / WhatsApp">
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <!-- SETTINGS -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_autoresponse" value="Thank you for contacting KiwiSpark Cleaning. We will contact you shortly.">
+      <input type="hidden" name="_subject" value="New Cleaning Enquiry - KiwiSpark">
+      
       <button type="submit">Send Message</button>
     </form>
-
-    <!-- GOOGLE MAP -->
-    <div class="map-box">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408760.89384902513!2d174.39690329220508!3d-36.8318296029195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1769841760075!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
   </div>
 </section>
 
-<footer>
-  <p>© 2026 Kiwispark Cleaning. All Rights Reserved.</p>
-</footer>
+<section>
+  <h2>Our Location</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408760.89384902513!2d174.39690329220508!3d-36.8318296029195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1769841760075"
+    width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
+  </iframe>
+</section>
 
-<!-- WHATSAPP LEAD -->
-<a href="https://wa.me/64221332408?text=Hello%20Kiwispark%20Cleaning,%20I%20need%20cleaning%20services." class="whatsapp-float" target="_blank">💬</a>
+<a class="whatsapp"
+   href="https://wa.me/64221332408?text=Hello%20I%20need%20cleaning%20service"
+   target="_blank">
+   WhatsApp Us
+</a>
+
+<footer>
+  © 2026 KiwiSpark Cleaning. All Rights Reserved.
+</footer>
 
 </body>
 </html>
