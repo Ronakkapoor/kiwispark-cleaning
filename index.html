@@ -81,6 +81,10 @@ button{
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
+  font-size:16px;
+}
+.whatsapp::after{
+  content:""; /* Remove tooltip for number hover */
 }
 .thankyou{
   display:none;
@@ -131,7 +135,6 @@ footer{
   <h2>Contact Us</h2>
 
   <div class="contact-box">
-    <!-- ✅ FORMSUBMIT SECURE TOKEN -->
     <form
       action="https://formsubmit.co/ef829d3fa116423eb6b1466125100449"
       method="POST"
@@ -171,9 +174,10 @@ footer{
   </iframe>
 </section>
 
+<!-- WhatsApp button with number hidden in tooltip -->
 <a class="whatsapp"
    href="https://wa.me/64221332408?text=Hello%20I%20need%20cleaning%20service"
-   target="_blank">
+   target="_blank" title="Chat with us">
    WhatsApp Us
 </a>
 
