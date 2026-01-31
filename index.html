@@ -131,8 +131,9 @@ footer{
   <h2>Contact Us</h2>
 
   <div class="contact-box">
+    <!-- ✅ FORMSUBMIT SECURE TOKEN -->
     <form
-      action="https://formsubmit.co/kapoorronak891@gmail.com"
+      action="https://formsubmit.co/ef829d3fa116423eb6b1466125100449"
       method="POST"
       onsubmit="showThankYou()"
     >
@@ -182,9 +183,9 @@ footer{
 
 <script>
 function showThankYou(){
-  setTimeout(()=>{
-    document.getElementById("thankyou").style.display="block";
-  },500);
+  const t = document.getElementById("thankyou");
+  t.style.display="block";
+  setTimeout(()=>{t.style.display="none";},4000);
 }
 </script>
 
