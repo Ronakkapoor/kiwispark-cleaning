@@ -21,8 +21,6 @@
     .contact {background:#f7f9ff;border-radius:12px;padding:40px;}
     form input, form textarea {width:100%;padding:12px;margin-bottom:15px;border-radius:6px;border:1px solid #ccc;font-size:15px;}
     form button {background:#0a6cff;color:#fff;padding:12px 25px;border:none;border-radius:6px;font-size:16px;cursor:pointer;}
-    #thankyou {display:none;margin-top:20px;padding:15px;background:#e6fff1;border-radius:6px;color:#0a7a3d;font-weight:600;animation:fadeSlide 0.6s ease;}
-    @keyframes fadeSlide {from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);} }
     .map-box {margin-top:40px;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.15);}    
     .whatsapp-float {position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;font-size:28px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:1000;animation:pulse 1.5s infinite;}
     @keyframes pulse {0%{transform:scale(1);}50%{transform:scale(1.1);}100%{transform:scale(1);} }
@@ -76,20 +74,19 @@
   <div class="contact">
     <h2>Contact Us</h2>
 
-    <!-- EMAIL LEAD FORM (FormSubmit) -->
+    <!-- EMAIL LEAD FORM (FormSubmit – FIXED 405) -->
     <form action="https://formsubmit.co/kapoorronak891@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New Cleaning Inquiry - Website">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_autoresponse" value="Thank you for contacting Kiwispark Cleaning! We have received your message and will get back to you shortly.">
+      <input type="hidden" name="_next" value="https://example.com/thanks.html">
 
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-
-    <div id="thankyou">✅ Thank you! Your message has been sent. We will contact you shortly.</div>
 
     <!-- GOOGLE MAP -->
     <div class="map-box">
@@ -105,16 +102,6 @@
 
 <!-- WHATSAPP LEAD -->
 <a href="https://wa.me/64221332408?text=Hello%20Kiwispark%20Cleaning,%20I%20need%20cleaning%20services." class="whatsapp-float" target="_blank">💬</a>
-
-<script>
-  // Show thank you after redirect back
-  if(window.location.search.includes('success')){
-    document.addEventListener('DOMContentLoaded',()=>{
-      const t=document.getElementById('thankyou');
-      if(t){t.style.display='block';setTimeout(()=>t.style.display='none',4000);}    
-    });
-  }
-</script>
 
 </body>
 </html>
