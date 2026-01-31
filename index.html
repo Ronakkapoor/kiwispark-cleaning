@@ -3,37 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KiwiSpark Cleaning | Professional Cleaning Services in New Zealand</title>
+  <title>Kiwispark Cleaning | Professional Cleaning Services NZ</title>
 
   <style>
-    body {margin:0;font-family:Arial, Helvetica, sans-serif;color:#333;}
-    header {background:#0a6cff;color:#fff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;}
-    header h1 {margin:0;font-size:24px;}
-    nav a {color:#fff;margin-left:20px;text-decoration:none;font-weight:500;}
-
-    .hero {background:#f2f6ff;padding:80px 40px;text-align:center;}
-    .hero h2 {font-size:40px;margin-bottom:15px;}
-    .hero p {font-size:18px;max-width:700px;margin:0 auto 25px;}
-    .btn {background:#0a6cff;color:#fff;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:bold;border:none;cursor:pointer;}
-
-    section {padding:60px 40px;max-width:1100px;margin:auto;}
-
-    .services {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-    .card {background:#fff;border-radius:10px;padding:25px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
-
-    .about {display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-
-    .contact {background:#f7f9ff;border-radius:12px;padding:40px;}
-
-    footer {background:#111;color:#fff;text-align:center;padding:20px;}
-
-    @media(max-width:768px){
-      .about{grid-template-columns:1fr;}
-      .hero h2{font-size:30px;}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background: #ffffff;
     }
 
-    /* THANK YOU MESSAGE ANIMATION */
-    .thankyou-box {
+    header {
+      background: #0a6cff;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: #f2f6ff;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      background: #0a6cff;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact {
+      background: #f7f9ff;
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    form button {
+      background: #0a6cff;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #thankyou {
       display: none;
       margin-top: 20px;
       padding: 15px;
@@ -41,52 +120,38 @@
       border-radius: 6px;
       color: #0a7a3d;
       font-weight: 600;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
+      animation: fadeSlide 0.6s ease;
     }
 
-    .thankyou-box.show {
-      opacity: 1;
-      transform: translateY(0);
+    @keyframes fadeSlide {
+      from {opacity: 0; transform: translateY(10px);} 
+      to {opacity: 1; transform: translateY(0);} 
     }
-
-    .whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25d366;
-  color: #fff;
-  font-size: 26px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 55px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  z-index: 1000;
-}
-
-.whatsapp-float:hover {
-  background-color: #1ebe5d;
-}
-
 
     .map-box {
-  margin-top: 30px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
+      margin-top: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
 
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media(max-width:768px){
+      .about {grid-template-columns: 1fr;}
+      .hero h2 {font-size: 30px;}
+    }
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>KiwiSpark Cleaning</h1>
+  <h1>Kiwispark Cleaning</h1>
   <nav>
     <a href="#">Home</a>
     <a href="#services">Services</a>
@@ -96,27 +161,27 @@
 </header>
 
 <section class="hero">
-  <h2>Professional Cleaning Services You Can Trust</h2>
-  <p>Reliable residential and commercial cleaning services across New Zealand.</p>
+  <h2>Professional Cleaning Services in New Zealand</h2>
+  <p>Reliable residential and commercial cleaning services with trained staff, eco-friendly products, and guaranteed satisfaction.</p>
   <a class="btn" href="#contact">Get Free Quote</a>
 </section>
 
 <section id="services">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card"><h3>Home Cleaning</h3><p>Complete house cleaning services.</p></div>
-    <div class="card"><h3>Office Cleaning</h3><p>Professional office and workspace cleaning.</p></div>
-    <div class="card"><h3>Deep Cleaning</h3><p>Detailed deep cleaning for tough areas.</p></div>
-    <div class="card"><h3>Move In / Move Out</h3><p>Cleaning for moving in or vacating properties.</p></div>
+    <div class="card"><h3>Home Cleaning</h3><p>Complete house cleaning including kitchen, bathrooms, bedrooms, and living areas.</p></div>
+    <div class="card"><h3>Office Cleaning</h3><p>Daily or weekly office cleaning for a healthy and productive work environment.</p></div>
+    <div class="card"><h3>Deep Cleaning</h3><p>Detailed cleaning covering hard-to-reach areas and stubborn dirt.</p></div>
+    <div class="card"><h3>Move In / Move Out</h3><p>Professional cleaning when moving in or vacating a property.</p></div>
   </div>
 </section>
 
 <section id="about">
   <div class="about">
     <div>
-      <h2>About KiwiSpark Cleaning</h2>
-      <p>We deliver high-quality, affordable, and reliable cleaning services with trained staff and eco-friendly products.</p>
-      <p>✔ Trusted Team<br>✔ Eco-Friendly Products<br>✔ On-Time Service</p>
+      <h2>About Us</h2>
+      <p>Kiwispark Cleaning is a trusted New Zealand cleaning company delivering high-quality and affordable cleaning solutions.</p>
+      <p>✔ Experienced Staff<br>✔ Eco-Friendly Products<br>✔ On-Time Service</p>
     </div>
     <div class="card">
       <h3>Why Choose Us?</h3>
@@ -126,64 +191,37 @@
 </section>
 
 <section id="contact">
-  <div class="map-box">
-  <iframe 
-    src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408760.89384902513!2d174.39690329220508!3d-36.8318296029195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1769841760075!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-    width="100%" 
-    height="350" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy">
-  </iframe>
-</div>
-
   <div class="contact">
     <h2>Contact Us</h2>
 
-    <!-- NETLIFY FORM -->
-    <form name="contact" method="POST" data-netlify="true" action="/?success=true">
+    <form name="contact" method="POST" data-netlify="true" onsubmit="showThankYou(event)">
       <input type="hidden" name="form-name" value="contact">
-
-      <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:12px;margin-bottom:10px;">
-      <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:12px;margin-bottom:10px;">
-      <textarea name="message" placeholder="Your Message" required style="width:100%;padding:12px;margin-bottom:10px;"></textarea>
-
-      <button type="submit" class="btn">Send Message</button>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
 
-    <!-- THANK YOU MESSAGE -->
-    <div id="thankyou" class="thankyou-box">
-      ✅ Thank you! Your message has been sent successfully. We will contact you shortly.
+    <div id="thankyou">✅ Thank you! Your message has been sent successfully.</div>
+
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408760.89384902513!2d174.39690329220508!3d-36.8318296029195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1769841760075!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   </div>
 </section>
 
 <footer>
-  <p>© 2026 KiwiSpark Cleaning. All Rights Reserved.</p>
+  <p>© 2026 Kiwispark Cleaning. All Rights Reserved.</p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("success") === "true") {
-    const msg = document.getElementById("thankyou");
-
-    msg.style.display = "block";
-    setTimeout(() => msg.classList.add("show"), 50);
-
-    setTimeout(() => {
-      msg.classList.remove("show");
-      msg.style.display = "none";
-      window.history.replaceState({}, document.title, "/");
-    }, 4000);
+  function showThankYou(e) {
+    e.preventDefault();
+    document.getElementById('thankyou').style.display = 'block';
+    setTimeout(() => e.target.submit(), 3000);
   }
 </script>
-
-  <a href="https://wa.me/64221332408" target="_blank" class="whatsapp-float">
-  💬
-</a>
-
 
 </body>
 </html>
