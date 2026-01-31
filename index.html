@@ -77,7 +77,7 @@
     <h2>Contact Us</h2>
 
     <!-- EMAIL LEAD FORM (FormSubmit) -->
-    <form action="https://formsubmit.co/kapoorronak891@gmail.com" method="POST" onsubmit="showThankYou()">
+    <form action="https://formsubmit.co/kapoorronak891@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New Cleaning Inquiry - Website">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
@@ -107,9 +107,12 @@
 <a href="https://wa.me/64221332408?text=Hello%20Kiwispark%20Cleaning,%20I%20need%20cleaning%20services." class="whatsapp-float" target="_blank">💬</a>
 
 <script>
-  function showThankYou(){
-    document.getElementById('thankyou').style.display='block';
-    setTimeout(()=>{document.getElementById('thankyou').style.display='none';},4000);
+  // Show thank you after redirect back
+  if(window.location.search.includes('success')){
+    document.addEventListener('DOMContentLoaded',()=>{
+      const t=document.getElementById('thankyou');
+      if(t){t.style.display='block';setTimeout(()=>t.style.display='none',4000);}    
+    });
   }
 </script>
 
